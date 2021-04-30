@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: nginx-deployment-d1
   labels:
-    app: nginx
+    name: fy2011
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      name: fy2011
   template:
     metadata:
       labels:
